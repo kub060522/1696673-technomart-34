@@ -3,36 +3,35 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/style.css">
   <title>Техномарт</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
+  <h1 class="visuallyhidden">Интернет-магазин "Техномарт"</h1>
   <header class="header">
     <section class="header-contacts">
-      <h2 class="visually-hidden">Адрес и телефон</h2>
-      <p class="contacts-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <address class="contacts-address">
-        <p class="contacts-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="contacts-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <h2 class="visuallyhidden">Адрес и телефон</h2>
+      <p class="header-contacts-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <address class="header-contacts-address">
+        <p class="header-contacts-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="header-contacts-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       </address>
     </section>
     <div class="header-logo-search-login">
       <a class="logo-link" href="#">
-        <img class="logo" src="" alt="Логотип Техномарт.">
+        <img class="logo" src="images/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт.">
       </a>
       <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label for="header-search">
-          <span class="visually-hidden">Поиск по сайту</span>
-        </label>
-        <input class="header-search-input" type="search" placeholder="Поиск:" name="header-search" id="header-search" required>
+        <label class="visuallyhidden" for="header-search">Поиск по сайту</label>
+        <input class="header-search-input" type="search" placeholder="Поиск:" name="header-search" id="header-search"
+          required>
       </form>
-      <button class="login-button" type="button">Вход</button>
+      <button class="header-login-button" type="button">Войти</button>
     </div>
     <nav class="header-navigation">
-      <h2 class="visually-hidden">Навигация сайта</h2>
-      <ul class="navigation-list-site">
+      <h2 class="visuallyhidden">Навигация сайта</h2>
+      <ul class="navigation-site-list">
         <li class="navigation-item">
           <a class="navigation-site-link" href="#">Главная</a>
         </li>
@@ -55,15 +54,15 @@
           <a class="navigation-site-link" href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="navigation-list-order">
+      <ul class="navigation-order-list">
         <li class="navigation-item">
           <a class="navigation-order-link" href="#">
-            <span class="visually-hidden">Закладки</span>
+            <span class="visuallyhidden">Закладки</span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-order-link" href="#">
-            <span class="visually-hidden">Корзина</span>
+            <span class="visuallyhidden">Корзина</span>
           </a>
         </li>
         <li class="navigation-item">
@@ -75,7 +74,7 @@
 
   <main class="main">
     <section class="catalog">
-      <h2 class="visually-hidden">Каталог сайта</h2>
+      <h2 class="visuallyhidden">Каталог сайта</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <h3 class="catalog-title">Материалы</h3>
@@ -90,7 +89,7 @@
           <a class="catalog-link" href="#"></a>
         </li>
         <li class="catalog-item">
-          <h3 class="catalog-title visually-hidden">Слайдер</h3>
+          <h3 class="catalog-title visuallyhidden">Слайдер</h3>
           <a class="catalog-link" href="#"></a>
         </li>
         <li class="catalog-item">
@@ -103,135 +102,140 @@
         </li>
       </ul>
     </section>
-    <section class="perforators">
-      <h2>Перфораторы</h2>
-      <form class="manufacturer-forme" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="manufacturer-fildset">
-          <legend class="manufacturer-legend">Цена</legend>
-          <div class="range-scale">
-            <div class="range-bar">
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену</span>
-              </button>
+    <section class="perforators-catalog">
+      <h2 class="perforators-catalog-title title-section">Перфораторы</h2>
+      <section class="perforators-catalog-form">
+        <h3 class="visuallyhidden">Фильтр. Цена-производители-питание.</h3>
+        <form class="manufacturer-forme" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="manufacturer-fildset">
+            <legend class="manufacturer-legend">Цена</legend>
+            <div class="range-scale">
+              <div class="range-bar">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visuallyhidden">Изменить минимальную цену</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visuallyhidden">Изменить максимальную цену</span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="range-input">
-            <label class="visually-hidden" for="min">Цена минимальная</label>
-            <input type="number" id="min" name="price-min" value="0">
-            <label class="visually-hidden" for="max">Цена максимальная</label>
-            <input type="number" id="max" name="price-max" value="30000">
-          </div>
-        </fieldset>
-        <fieldset class="manufacturer-fildset">
-          <legend class="manufacturer-legend">Производители</legend>
-          <ul class="manufacturer-list">
-            <li class="manufacturer-item">
-              <label class="manufacturer-checkbox">
-                <input class="manufacturer-input visually-hidden" type="checkbox" name="bosch" checked>
-                <span class="manufacturer-mark"></span>
-                BOSCH
-              </label>
-            </li>
-            <li class="manufacturer-item">
-              <label class="manufacturer-checkbox">
-                <input class="manufacturer-input visually-hidden" type="checkbox" name="interskol">
-                <span class="manufacturer-mark"></span>
-                ИНТЕРСКОЛ
-              </label>
-            </li>
-            <li class="manufacturer-item">
-              <label class="manufacturer-checkbox">
-                <input class="manufacturer-input visually-hidden" type="checkbox" name="makita" checked>
-                <span class="manufacturer-mark"></span>
-                MAKita
-              </label>
-            </li>
-            <li class="manufacturer-item">
-              <label class="manufacturer-checkbox">
-                <input class="manufacturer-input visually-hidden" type="checkbox" name="dewalt">
-                <span class="manufacturer-mark"></span>
-                Dewalt
-              </label>
-            </li>
-            <li class="manufacturer-item">
-              <label class="manufacturer-checkbox">
-                <input class="manufacturer-input visually-hidden" type="checkbox" name="hitachi">
-                <span class="manufacturer-mark"></span>
-                Hitachi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="power-fildset">
-          <legend class="power-legend">Питание</legend>
-          <ul class="power-list">
-            <li class="power-item">
-              <label class="power-radio">
-                <input class="radio-input visually-hidden" type="radio" name="power-radio" value="battery" checked>
-                <span class="power-mark"></span>
-                Аккумуляторные
-              </label>
-            </li>
-            <li class="power-item">
-              <label class="power-radio">
-                <input class="radio-input visually-hidden" type="radio" name="power-radio" value="network">
-                <span class="power-mark"></span>
-                Сетевые
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="button-fildset">
-          <button class="form-button" type="submit">Показать</button>
-        </fieldset>
-      </form>
-      <section class="sorting">
-        <h3 class="visually-hidden">Сортировка</h3>
-        <select class="sorting-option" name="sorting">
+            <div class="range-input">
+              <label class="visuallyhidden" for="min">Цена минимальная</label>
+              <input type="number" id="min" name="price-min" value="0">
+              <label class="visuallyhidden" for="max">Цена максимальная</label>
+              <input type="number" id="max" name="price-max" value="30000">
+            </div>
+          </fieldset>
+          <fieldset class="manufacturer-fildset">
+            <legend class="manufacturer-legend">Производители</legend>
+            <ul class="manufacturer-list">
+              <li class="manufacturer-item">
+                <label class="manufacturer-checkbox">
+                  <input class="manufacturer-input" type="checkbox" name="bosch" checked>
+                  <span class="manufacturer-mark"></span>
+                  BOSCH
+                </label>
+              </li>
+              <li class="manufacturer-item">
+                <label class="manufacturer-checkbox">
+                  <input class="manufacturer-input" type="checkbox" name="interskol">
+                  <span class="manufacturer-mark"></span>
+                  ИНТЕРСКОЛ
+                </label>
+              </li>
+              <li class="manufacturer-item">
+                <label class="manufacturer-checkbox">
+                  <input class="manufacturer-input" type="checkbox" name="makita" checked>
+                  <span class="manufacturer-mark"></span>
+                  MAKita
+                </label>
+              </li>
+              <li class="manufacturer-item">
+                <label class="manufacturer-checkbox">
+                  <input class="manufacturer-input" type="checkbox" name="dewalt">
+                  <span class="manufacturer-mark"></span>
+                  Dewalt
+                </label>
+              </li>
+              <li class="manufacturer-item">
+                <label class="manufacturer-checkbox">
+                  <input class="manufacturer-input" type="checkbox" name="hitachi">
+                  <span class="manufacturer-mark"></span>
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="power-fildset">
+            <legend class="power-legend">Питание</legend>
+            <ul class="power-list">
+              <li class="power-item">
+                <label class="power-radio">
+                  <input class="radio-input" type="radio" name="power-radio" value="battery" checked>
+                  <span class="power-mark"></span>
+                  Аккумуляторные
+                </label>
+              </li>
+              <li class="power-item">
+                <label class="power-radio">
+                  <input class="radio-input" type="radio" name="power-radio" value="network">
+                  <span class="power-mark"></span>
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="button-fildset">
+            <button class="form-button" type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="perforators-catalog-sorting">
+        <h3 class="visuallyhidden">Сортировка</h3>
+        <select class="sorting-option-select" name="sorting">
+          <option value="sorting-option">Сортировать</option>
           <option value="inexpensive">Сначала дешёвые</option>
           <option value="popular">Популярные</option>
           <option value="expensive">Дорогие</option>
         </select>
       </section>
-      <ul class="perforators-list">
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 3000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 6000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 2000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 3000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 6000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 2000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 3000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 6000</h3>
-        </li>
-        <li class="perforators-item">
-          <h3 class="perforators-title">Перфоратор BOSCH BFG 2000</h3>
-        </li>
-      </ul>
-      <div class="perforators-pagination">
+      <section class="perforators-catalog-register">
+        <h3 class="visuallyhidden">Список перфораторов</h3>
+        <ul class="register-list">
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 3000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 6000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 2000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 3000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 6000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 2000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 3000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 6000</h3>
+          </li>
+          <li class="register-item">
+            <h3 class="register-title">Перфоратор BOSCH BFG 2000</h3>
+          </li>
+        </ul>
         <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link pagination-current" href="#">2</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">3</a>
@@ -239,28 +243,30 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-show-more" href="#">Показать ещё</a>
+          </li>
         </ul>
-        <button class="pagination-button" type="button">Показать ещё</button>
-      </div>
+      </section>
     </section>
     <section class="services">
-      <h2>Сервисы</h2>
+      <h2 class="services-title title-section">Сервисы</h2>
       <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
         сил, чтобы сделать ваши покупки приятными.</p>
       <ul class="services-list">
         <li class="services-item">
-          <h3>Доставка</h3>
+          <h3 class="services-title-chapter">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем,
             поднимая его на ваш этаж!</p>
         </li>
         <li class="services-item">
-          <h3>Гарантия</h3>
+          <h3 class="services-title-chapter">Гарантия</h3>
           <p>Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам
             стоимось товара</p>
         </li>
         <li class="services-item">
-          <h3>Кредит</h3>
+          <h3 class="services-title-chapter">Кредит</h3>
           <p>Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и
             ждать результата одобрения кредита.
             Все как в банке, только проще!</p>
@@ -268,16 +274,16 @@
       </ul>
     </section>
     <section class="about-company">
-      <h2 class="visually-hidden">О компании</h2>
+      <h2 class="visuallyhidden">О компании</h2>
       <div class="company-info">
-        <h3>Компания "Техномарт"</h3>
+        <h3 class="title-section">Компания "Техномарт"</h3>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.Мы можем доставить ваш товар в самые отдаленные точки
           России! Техномарт работает со многими транспортными компаниями:</p>
         <a class="about-company-link" href="#">О компании</a>
       </div>
       <div class="contacts">
-        <h3>Контакты</h3>
+        <h3 class="title-section">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
       </div>
 
@@ -286,47 +292,44 @@
 
   <footer class="footer">
     <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="visuallyhidden">Контакты</h2>
       <a class="logo-link" href="#">
-        <img class="logo" src="" alt="Логотип Техномарт.">
+        <img class="logo" src="images/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт.">
       </a>
-      <address class="contacts-address">
-        <p class="contacts-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="contacts-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </address>
+      <p class="contacts-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
       <ul class="footer-social-list">
         <li class="social-item">
           <a class="social-link" href="#">
-            <span class="visually-hidden">Pinterest</span>
+            <span class="visuallyhidden">Pinterest</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="#">
-            <span class="visually-hidden">VKontakte</span>
+            <span class="visuallyhidden">VKontakte</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="#">
-            <span class="visually-hidden">VSCO</span>
+            <span class="visuallyhidden">VSCO</span>
           </a>
         </li>
       </ul>
+      <div class="footer-subscription">
+        <address class="subscription-mail">
+          Обратная связь:
+          <a class="subscription-mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </address>
+        <p class="subscription-text">Получайте лучшие предложения</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visuallyhidden" for="email">email</label>
+          <input class="subscription-form-email" type="email" name="subscription-email" id="email"
+            placeholder="email@example.com" required>
+          <button class="subscription-form-button" type="submit">
+            <span class="visuallyhidden">Подписка</span>
+          </button>
+        </form>
+      </div>
     </section>
-    <div class="footer-subscription">
-      <address class="subscription-mail">
-        Обратная связь:
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </address>
-      <p class="subscription-text">Получайте лучшие предложения</p>
-      <form class="subscription-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="email">email</label>
-        <input class="subscription-form-email" type="email" name="subscription-email" id="email"
-          placeholder="email@example.com" required>
-        <button class="subscription-form-button" type="submit">
-          <span class="visually-hidden">Подписка</span>
-        </button>
-      </form>
-    </div>
     <div class="copyright">
       <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <p>Разработано -

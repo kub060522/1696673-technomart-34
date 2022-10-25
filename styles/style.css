@@ -30,3 +30,255 @@
   font-display: swap;
 }
 
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #293449;
+  background-color: #ffffff;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-contacts {
+  background-color: #f3f7f9;
+  color: #000000;
+}
+
+.header-contacts-text {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ee3643;
+}
+
+.header-contacts-address-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  opacity: 0.2;
+}
+
+.header-contacts-address-phone {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+  color: #293449;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-logo-search-login {
+  background: #293449;
+  color: #ffffff;
+}
+
+.header-search-input {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.header-search-input::placeholder {
+  color: #ffffff;
+}
+
+.header-login-button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  color: #f1f5f7;
+  cursor: pointer;
+}
+
+.header-navigation {
+  background-color: #3d546f;
+}
+
+.navigation-site-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-order-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.title-section {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #293449;
+}
+
+.manufacturer-legend {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.manufacturer-checkbox {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.power-legend {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.power-radio {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  color: #32425c;
+  cursor: pointer;
+}
+
+.sorting-option-select {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #293449;
+}
+
+.register-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #293449;
+}
+
+.pagination-link {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #3d546f;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #3d546f;
+  background-color: #ffffff;
+}
+
+.pagination-show-more,
+.about-company-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.services {
+  background-color: #f5f8fa;
+}
+
+.services-title {
+  text-align: center;
+}
+
+.services-title-chapter {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.footer-contacts {
+  background-color: #32425c;
+}
+
+.copyright {
+  background-color: #293449;
+}
+
+.contacts-address-text {
+  color: #f3f7f9;
+  font-style: normal;
+}
+
+.subscription-mail,
+.subscription-text {
+  color: #ffffff;
+  font-style: normal;
+}
+
+.subscription-mail-link {
+  color: #ffd180;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.copyright-link {
+  color: #ffd180;
+  text-decoration: none;
+}
