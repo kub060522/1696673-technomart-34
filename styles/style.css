@@ -31,6 +31,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -56,16 +57,34 @@ body {
   overflow: hidden;
 }
 
+.header {
+  background-image: linear-gradient(#f3f7f9 45px, #293449 45px, #293449 90px, #3d546f 90px);
+}
+
+.header-container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .header-contacts {
-  background-color: #f3f7f9;
+  display: flex;
+  padding-left: 117px;
+  background-color: transparent;
   color: #000000;
 }
 
 .header-contacts-text {
+  margin-right: auto;
   font-style: italic;
   font-size: 14px;
   line-height: 18px;
   color: #ee3643;
+}
+
+.header-contacts-address {
+  display: flex;
+  align-items: center;
+  margin-right: 116px;
 }
 
 .header-contacts-address-text {
@@ -77,6 +96,7 @@ body {
 }
 
 .header-contacts-address-phone {
+  padding: 13px 0 14px;
   font-weight: 700;
   font-style: normal;
   line-height: 18px;
@@ -87,7 +107,8 @@ body {
 }
 
 .header-logo-search-login {
-  background: #293449;
+  display: flex;
+  background: transparent;
   color: #ffffff;
 }
 
@@ -121,12 +142,21 @@ body {
 }
 
 .header-navigation {
-  background-color: #3d546f;
+  display: flex;
+  background-color: transparent;
+}
+
+.navigation-site-list {
+  display: flex;
 }
 
 .navigation-site-link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.navigation-order-list {
+  display: flex;
 }
 
 .navigation-order-link {
