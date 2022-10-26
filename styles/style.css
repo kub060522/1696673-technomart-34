@@ -68,7 +68,7 @@ body {
 
 .header-contacts {
   display: flex;
-  padding-left: 117px;
+  padding: 0 117px;
   background-color: transparent;
   color: #000000;
 }
@@ -83,8 +83,9 @@ body {
 
 .header-contacts-address {
   display: flex;
+  width: 508px;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 116px;
 }
 
 .header-contacts-address-text {
@@ -96,7 +97,7 @@ body {
 }
 
 .header-contacts-address-phone {
-  padding: 13px 0 14px;
+  padding: 13px 0 14px 27px;
   font-weight: 700;
   font-style: normal;
   line-height: 18px;
@@ -104,6 +105,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0;
 }
 
 .header-logo-search-login {
