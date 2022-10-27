@@ -57,8 +57,8 @@ body {
   overflow: hidden;
 }
 
-.header {
-  background-image: linear-gradient(#f3f7f9 45px, #293449 45px, #293449 90px, #3d546f 90px);
+.contacts-background {
+  background-color: #f3f7f9;
 }
 
 .header-container {
@@ -68,12 +68,12 @@ body {
 
 .header-contacts {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 117px;
-  background-color: transparent;
   color: #000000;
 }
 
-.header-contacts-text {
+.contacts-text {
   margin-right: auto;
   font-style: italic;
   font-size: 14px;
@@ -81,22 +81,23 @@ body {
   color: #ee3643;
 }
 
-.header-contacts-address {
+.contacts-address {
   display: flex;
+  flex-wrap: wrap;
   width: 508px;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-contacts-address-text {
+.address-text {
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
-  opacity: 0.2;
+  /* opacity: 0.2; */
 }
 
-.header-contacts-address-phone {
+.address-phone {
   padding: 13px 0 14px 27px;
   font-weight: 700;
   font-style: normal;
@@ -107,16 +108,42 @@ body {
   letter-spacing: 2px;
   background-image: url(../images/phone.svg);
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: left;
 }
 
-.header-logo-search-login {
+.logo-background {
+  background: #293449;
+}
+
+.search-login {
   display: flex;
-  background: transparent;
+  padding: 0 112px;
   color: #ffffff;
 }
 
-.header-search-input {
+.logo-link {
+  width: 220px;
+  margin-bottom: -5px;
+  padding: 12px 0 14px;
+  text-align: center;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+ }
+ 
+.header-form {
+  position: relative;
+}
+
+ .header-form svg {
+  position: absolute;
+  top: 12px;
+  left: 21px;
+  opacity: 0.3;
+ }
+
+.header-input {
+  width: 716px;
+  padding: 8px 0 12px 54px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -127,11 +154,17 @@ body {
   background-color: transparent;
 }
 
-.header-search-input::placeholder {
+.header-input::placeholder {
   color: #ffffff;
 }
 
-.header-login-button {
+.login-container {
+  display: flex;
+  margin-left: auto;
+}
+
+.login-button {
+  padding-left: 26px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -140,27 +173,68 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: transparent;
+  background-image: url(../images/imput.svg);
+  background-repeat: no-repeat;
+  background-position: left;
   border: none;
   color: #f1f5f7;
   cursor: pointer;
 }
 
-.header-navigation {
+.navigation-background {
+  background-color: #3d546f;
+}
+
+.navigation {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 117px;
+  justify-content: space-between;
   background-color: transparent;
 }
 
 .navigation-site-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 840px;
+  margin: 0;
+  margin-left: -23px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .navigation-site-link {
+  display: block;
   color: #ffffff;
   text-decoration: none;
+  padding: 20px 24px 26px;
+}
+
+.navigation-item:nth-child(1) {
+  margin-right: 5px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 2px;
+}
+
+.navigation-item:nth-child(3) {
+  margin-right: 3px;
+}
+
+.navigation-item:nth-child(5) {
+  margin-right: -2px;
+}
+
+.navigation-item:nth-child(6) {
+  margin-right: 2px;
 }
 
 .navigation-order-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .navigation-order-link {
