@@ -232,14 +232,35 @@ body {
 
 .navigation-order-list {
   display: flex;
+  width: 254px;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
 }
 
 .navigation-order-link {
+  display: block;
   color: #ffffff;
   text-decoration: none;
+}
+
+.navigation-order-link svg{
+  opacity: 0.6;
+}
+
+.order-link-button {
+  margin: 10px 3px 15px;
+  padding: 12px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background-color: #63a63e;
+  border-radius: 4px;
 }
 
 .catalog-title {
