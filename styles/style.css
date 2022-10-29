@@ -473,9 +473,21 @@ body {
   color: #293449;
 }
 
+.manufacturer-fildset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .manufacturer-legend {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.manufacturer-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .manufacturer-checkbox {
@@ -483,9 +495,21 @@ body {
   line-height: 18px;
 }
 
+.power-fildset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .power-legend {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.power-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .power-radio {
@@ -517,12 +541,24 @@ body {
   color: #293449;
 }
 
+.register-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .register-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   color: #293449;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .pagination-link {
@@ -621,6 +657,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 115px;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .copyright-background {
