@@ -1,3 +1,2 @@
-#Студент: Александр Морозов
-![](toggl-1.jpg)
-![](toggl-2.jpg)
+[](toggl-1.jpg)
+[](toggl-2.jpg)
