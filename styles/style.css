@@ -173,6 +173,7 @@ body {
 
 .login-container {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
 }
 
@@ -245,6 +246,7 @@ body {
 
 .navigation-order-list {
   display: flex;
+  flex-wrap: wrap;
   width: 254px;
   margin: 0;
   padding: 0;
@@ -380,6 +382,8 @@ body {
 
 .slider-product-img {
   display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .slider-name {
@@ -621,6 +625,7 @@ body {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1170px;
   margin: 0;
@@ -648,6 +653,7 @@ body {
 
 .company {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 52px 115px;
   margin: 0 auto;
@@ -667,25 +673,29 @@ body {
 
 .footer-contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 115px;
 }
 
+.footer-contacts-addres {
+  max-width: 550px;
+}
+
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.copyright-background {
-  background-color: #293449;
+.footer-subscription {
+  max-width: 350px;
 }
 
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 115px;
-  margin: 0 auto;
+.copyright-background {
+  background-color: #293449;
 }
 
 .contacts-address-text {
@@ -709,9 +719,22 @@ body {
 }
 
 .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 115px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.copyright-text {
+  max-width: 550px;
+}
+
+.copyright-creator {
+  max-width: 350px;
 }
 
 .copyright-link {
